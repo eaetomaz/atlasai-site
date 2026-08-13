@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AtlasAI · Política de Privacidade</title>
+<style>
+  :root {
+    --bg: #0f0f14;
+    --surface: #17171f;
+    --border: #26262f;
+    --text: #f0f0f5;
+    --text-dim: #a2a2b2;
+    --accent: #6c5ce7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    margin-top: 36px;
+    margin-bottom: 8px;
+  }
+  p, li {
+    color: var(--text-dim);
+  }
+  ul {
+    padding-left: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-dim);
+    vertical-align: top;
+  }
+  th {
+    color: var(--text);
+    font-weight: 600;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./index.html">&larr; AtlasAI</a>
+  <h1>Política de Privacidade</h1>
+  <p class="updated">Última atualização: 13 de agosto de 2026</p>
+
+  <h2>1. Onde seus dados ficam</h2>
+  <p>
+    O AtlasAI é um aplicativo desktop que roda inteiramente na sua própria máquina. Não existe um
+    servidor central do AtlasAI recebendo ou armazenando seus dados: tudo o que o aplicativo
+    processa e guarda fica em um banco de dados local (SQLite), dentro da própria pasta de
+    instalação, na sua máquina.
+  </p>
+
+  <h2>2. Dados que conectamos com o TikTok</h2>
+  <p>
+    Quando você conecta um perfil do TikTok pelo AtlasAI, o fluxo oficial de login OAuth do
+    TikTok retorna as seguintes informações, que o AtlasAI armazena localmente para permitir a
+    publicação:
+  </p>
+  <table>
+    <tr><th>Dado</th><th>Finalidade</th></tr>
+    <tr><td>Identificador da conta (open_id)</td><td>Saber qual conta do TikTok está conectada a qual perfil no AtlasAI.</td></tr>
+    <tr><td>Token de acesso e token de atualização (refresh token)</td><td>Autenticar as chamadas de publicação de vídeo em seu nome, sem pedir login novamente a cada vez.</td></tr>
+  </table>
+  <p>
+    O AtlasAI solicita apenas os escopos <code>video.upload</code> e <code>video.publish</code> da
+    API do TikTok — o mínimo necessário para publicar vídeos na conta conectada. O aplicativo não
+    lê, armazena nem publica nada em contas que você não conectou explicitamente.
+  </p>
+
+  <h2>3. Outros serviços de terceiros usados</h2>
+  <ul>
+    <li><strong>YouTube Data API</strong> — usada para obter dados públicos do vídeo de origem.</li>
+    <li><strong>Google Gemini</strong> — usada para gerar e revisar roteiro/metadata do vídeo curto.</li>
+  </ul>
+  <p>
+    Essas chamadas são feitas diretamente da sua máquina para os respectivos provedores; o uso
+    dessas APIs está sujeito às políticas de privacidade de cada um deles.
+  </p>
+
+  <h2>4. Compartilhamento de dados</h2>
+  <p>
+    O AtlasAI não vende, aluga nem compartilha seus dados com terceiros para fins de publicidade
+    ou qualquer outra finalidade fora do funcionamento do próprio aplicativo.
+  </p>
+
+  <h2>5. Retenção e exclusão</h2>
+  <p>
+    Os tokens do TikTok ficam armazenados localmente até você desconectar o perfil no AtlasAI ou
+    revogar o acesso diretamente nas configurações de aplicativos conectados da sua conta do
+    TikTok. Desinstalar o AtlasAI remove o banco de dados local e, com ele, todos os dados
+    armazenados.
+  </p>
+
+  <h2>6. Crianças</h2>
+  <p>
+    O AtlasAI não é direcionado a menores de 13 anos e não coleta intencionalmente dados de
+    crianças.
+  </p>
+
+  <h2>7. Alterações nesta política</h2>
+  <p>
+    Esta política pode ser atualizada. A versão vigente estará sempre disponível nesta página.
+  </p>
+
+  <h2>8. Contato</h2>
+  <p>
+    Dúvidas sobre esta política ou solicitações relacionadas aos seus dados:
+    <a href="mailto:guilhermetomaz.bsi@gmail.com">guilhermetomaz.bsi@gmail.com</a>
+  </p>
+</div>
+</body>
+</html>

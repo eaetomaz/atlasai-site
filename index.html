@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AtlasAI</title>
+<style>
+  :root {
+    --bg: #0f0f14;
+    --surface: #17171f;
+    --border: #26262f;
+    --text: #f0f0f5;
+    --text-dim: #a2a2b2;
+    --accent: #6c5ce7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin: 0 0 8px;
+  }
+  .tagline {
+    color: var(--text-dim);
+    font-size: 1.05rem;
+  }
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 0;
+  }
+  ul {
+    padding-left: 20px;
+    color: var(--text-dim);
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  footer {
+    margin-top: 48px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Aplicativo desktop</span>
+    <h1>AtlasAI</h1>
+    <p class="tagline">Automação de repurposing de vídeo, do vídeo original à publicação no TikTok.</p>
+  </header>
+
+  <section>
+    <h2>O que é</h2>
+    <p>
+      O AtlasAI é um aplicativo desktop (Windows) de uso individual que automatiza a criação de
+      vídeos curtos a partir de conteúdo já existente. Ele roda localmente na máquina do usuário —
+      não é um serviço web hospedado publicamente.
+    </p>
+  </section>
+
+  <section>
+    <h2>Como funciona</h2>
+    <ul>
+      <li>Baixa e transcreve o vídeo de origem localmente.</li>
+      <li>Usa um modelo de linguagem (Google Gemini) para gerar, avaliar e melhorar o roteiro e a
+        metadata do vídeo curto (título, descrição).</li>
+      <li>Monta o vídeo final localmente.</li>
+      <li>Publica o resultado na conta do TikTok do próprio usuário, mediante autorização OAuth
+        explícita concedida por ele.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Integração com o TikTok</h2>
+    <p>
+      O AtlasAI usa a API oficial de publicação de conteúdo do TikTok (Content Posting API) para
+      publicar vídeos em nome do usuário, apenas na conta que o próprio usuário conectar via login
+      OAuth do TikTok. O aplicativo não acessa, publica ou modifica nenhuma conta que não tenha
+      sido explicitamente conectada pelo usuário.
+    </p>
+  </section>
+
+  <footer>
+    <a href="./privacidade.html">Política de Privacidade</a>
+    <a href="./termos.html">Termos de Serviço</a>
+  </footer>
+</div>
+</body>
+</html>
