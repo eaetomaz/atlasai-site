@@ -80,7 +80,7 @@
 <div class="wrap">
   <a class="back" href="../index.html">&larr; AtlasAI</a>
   <h1>Política de Privacidade</h1>
-  <p class="updated">Última atualização: 13 de agosto de 2026</p>
+  <p class="updated">Última atualização: 18 de agosto de 2026</p>
 
   <h2>1. Onde seus dados ficam</h2>
   <p>
@@ -92,19 +92,22 @@
 
   <h2>2. Dados que conectamos com o TikTok</h2>
   <p>
-    Quando você conecta um perfil do TikTok pelo AtlasAI, o fluxo oficial de login OAuth do
-    TikTok retorna as seguintes informações, que o AtlasAI armazena localmente para permitir a
-    publicação:
+    O AtlasAI <strong>não publica vídeos no TikTok</strong> — toda publicação, quando o usuário
+    decide fazê-la, acontece manualmente, fora do aplicativo. A conexão com o TikTok existe apenas
+    para identificar a conta dentro do AtlasAI (por exemplo, como referência no painel de
+    tendências). Quando você conecta um perfil do TikTok, o fluxo oficial de login OAuth retorna
+    as seguintes informações, que o AtlasAI armazena localmente:
   </p>
   <table>
     <tr><th>Dado</th><th>Finalidade</th></tr>
     <tr><td>Identificador da conta (open_id)</td><td>Saber qual conta do TikTok está conectada a qual perfil no AtlasAI.</td></tr>
-    <tr><td>Token de acesso e token de atualização (refresh token)</td><td>Autenticar as chamadas de publicação de vídeo em seu nome, sem pedir login novamente a cada vez.</td></tr>
+    <tr><td>Informações básicas de perfil (ex.: nome de usuário e avatar)</td><td>Exibir qual conta está conectada dentro do aplicativo.</td></tr>
   </table>
   <p>
-    O AtlasAI solicita apenas os escopos <code>video.upload</code> e <code>video.publish</code> da
-    API do TikTok — o mínimo necessário para publicar vídeos na conta conectada. O aplicativo não
-    lê, armazena nem publica nada em contas que você não conectou explicitamente.
+    O AtlasAI solicita apenas escopos de identificação básica da conta — nenhum escopo de
+    publicação de vídeo (como <code>video.upload</code> ou <code>video.publish</code>) é
+    solicitado ou utilizado. O aplicativo não lê, armazena nem publica nada em contas que você não
+    conectou explicitamente.
   </p>
 
   <h2>3. Outros serviços de terceiros usados</h2>
